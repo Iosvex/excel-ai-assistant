@@ -9,14 +9,14 @@
   <Version>1.0.0.0</Version>
   <ProviderName>YourCompany</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="Inventory Manager" />
-  <Description DefaultValue="Natural language inventory management for drilling companies" />
-  <IconUrl DefaultValue="https://surface-antivirus-footage.ngrok-free.dev/assets/icon-32.png" />
-  <HighResolutionIconUrl DefaultValue="https://surface-antivirus-footage.ngrok-free.dev/assets/icon-80.png" />
-  <SupportUrl DefaultValue="https://surface-antivirus-footage.ngrok-free.dev/support" />
+  <DisplayName DefaultValue="Excel AI Assistant" />
+  <Description DefaultValue="Universal Ai Assistant" />
+  <IconUrl DefaultValue="https://excel-ai-assistant-backend.onrender.com/assets/icon-32.png" />
+  <HighResolutionIconUrl DefaultValue="https://excel-ai-assistant-backend.onrender.com/assets/icon-80.png" />
+  <SupportUrl DefaultValue="https://excel-ai-assistant-backend.onrender.com/support" />
 
   <AppDomains>
-    <AppDomain>https://surface-antivirus-footage.ngrok-free.dev</AppDomain>
+    <AppDomain>https://excel-ai-assistant-backend.onrender.com</AppDomain>
   </AppDomains>
 
   <Hosts>
@@ -24,7 +24,7 @@
   </Hosts>
 
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://surface-antivirus-footage.ngrok-free.dev/taskpane.html" />
+    <SourceLocation DefaultValue="https://excel-ai-assistant-backend.onrender.com/taskpane.html" />
   </DefaultSettings>
 
   <Permissions>ReadWriteDocument</Permissions>

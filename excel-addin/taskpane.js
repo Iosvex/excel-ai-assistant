@@ -1,7 +1,7 @@
 // ============================================================
 // CONFIGURATION — update this to your Render backend URL
 // ============================================================
-const BACKEND_URL = "https://surface-antivirus-footage.ngrok-free.dev";
+const BACKEND_URL = "https://excel-ai-assistant-backend.onrender.com";
 // If frontend and backend are on same server (FastAPI serves static),
 // change BACKEND_URL to "" (empty string) to use relative URLs.
 
