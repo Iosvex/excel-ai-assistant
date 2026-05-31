@@ -1,8 +1,7 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Response
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
-from typing import Dict, Any, List, Optional
+from typing import Dict, Any, List
 import json
 import re
 from datetime import date
@@ -188,14 +187,7 @@ JSON response:
             warnings=[]
         )
 
-@app.get("/health")
+# ========== Health Check — supports GET and HEAD ==========
+@app.api_route("/health", methods=["GET", "HEAD"])
 async def health():
     return {"status": "alive", "date": date.today().strftime("%d/%m/%Y")}
-
-# ========== Static Files — MUST BE LAST ==========
-static_dir = os.path.join(os.path.dirname(__file__), "..", "excel-addin")
-if os.path.exists(static_dir):
-    app.mount("/", StaticFiles(directory=static_dir, html=True), name="static")
-    print(f"[OK] Serving frontend from: {static_dir}")
-else:
-    print(f"[WARN] Frontend folder not found at: {static_dir}")
