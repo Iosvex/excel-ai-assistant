@@ -1,0 +1,6 @@
+.env
+ApiKeys
+__pycache__/
+*.pyc
+inventory.db
+ngrok.exe
